@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@300&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Piazzolla', serif;
+}
+
+:root{
+ --main-bg : #1e222e;
+ --main-color:#0097e6;
+}
+html{
+    font-size:62.5%;
+
+}
+body{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+}
+.row{
+ margin:0;
+}
+
+body{
+    background-color:azure;
+}
+
+.main-menu{
+    background-color: var(--main-bg);
+}
+.navbar{
+    color:#fff;
+    background-color: var(--main-bg);
+    /* font-size: 16px; */
+    padding:1.6rem;
+}
+.navbar a {
+    color:white;
+    font-size: 1.8rem;
+}
+.navbar-toggler{
+    background-color:gray;
+}
+.navbar li{
+    margin-left: 20px;;
+}
+.navbar a:hover{
+    color:var(--main-color);
+    transition: .5s;
+}
+
+
+/* main header */
+
+.main_header_left{
+    height:60rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+.main_header_left p{
+    font-size:2rem;
+}
+.main_header_left h1{
+    font-size:4rem;
+    margin:1rem 0 4rem 0;
+    text-transform: capitalize;
+
+}
+.main_header_left button{
+    border:none;
+    padding:0.8rem 1.8rem;
+    font-size: 1.4rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    box-shadow: 0 8px 6px -6px #000;
+    cursor: pointer;
+}
+.main_header_left button:hover{
+    box-shadow: 0 8px 6px -6px var(--main-color);
+    transition: .1s;
+}
+#text-color{
+    color:var(--main-color);
+}
+
+.main_header_right{
+    height:60rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.main_header_right figure img{
+
+}
+
+
+
+/* Footer Style  */
+
+footer{
+    width:100%;
+    background-color: var(--main-bg);
+    margin-top:auto;
+}
+
+footer p {
+    margin:0;
+    text-align: center;
+    color:white;
+    font-size:1.4rem;
+    line-height: 5rem;
+
+}
+#project_img{
+    border-radius: 20rem;
+}
+
+
+/* Weather Style  */
+.main_content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin:4.5rem 3.5rem;
+    /* background-color: #000; */
+    padding:1rem;
+    width:80%;
+    /* width:100%; */
+}
+
+.temp_form{
+    /* width:60%; */
+    position: relative;
+    /* margin:10rem auto 6rem; */
+}
+.temp_form input[type="text"]{
+    width:auto;
+    padding: 2rem 5rem 2rem 2rem;
+    background-color: #1e222e;
+    color:white;
+    outline: none;
+    border:none;
+    font-size: 1.7rem;
+    border-radius: 3rem;
+}
+.temp_form input[type="submit"]
+{
+    position: absolute;
+    top: 5;
+    left: 22rem;
+    top: 0rem;
+    right: 0rem;
+    height: 6.5;
+    border-radius: 2rem;
+    padding: 0.5rem;
+    bottom: 0rem;
+    cursor: pointer;
+    background-color: #323544;
+    color:whitesmoke;
+}
+.temp_form #cityName{
+   
+    border-radius: none;
+    /* padding:2rem 2rem; */
+
+}
+.main_layer{
+    text-align: center;
+}
+#temp{
+    font-size: 5rem;
+    color:white;
+    /* text-align: center; */
+}
+
+#temp_status{
+    font-size: 5rem;
+    color: whitesmoke;
+}
+.tempInformation{
+    width:100%;
+    margin:auto;
+    min-height:20rem;
+    background-color: #323544;
+    border-radius: 1rem;
+    padding:1rem;
+    
+}
+
+.top_layer{
+    width:100%;
+    height:20%;
+    /* background-color: ; */
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    border-radius: 1rem;
+    /* padding:2rem 0; */
+    color:white;
+
+}
+.top_layer p{
+    color:white;
+    font-weight: 300;
+}
+.main_layer{
+    width:100%;
+    height:80%;
+    display: flex;
+    flex-direction: column;
+}
+.main_layer #city_name{
+    padding:2rem 0;
+    color:white;
+    font-weight: 300;
+    font-size: 2rem;
+}
+.middle_layer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.about-content{
+    margin-top:3rem;
+    margin-bottom: 2rem;
+
+}
+.about-content p{
+    margin-top:3rem;
+
+}
+@media (max-width:768px){
+    .main_header_left{
+        height:0;
+        margin-top:20rem;
+    }
+    .main_header_right{
+        height:auto;
+        margin-top:20rem;
+        margin-bottom:5rem;
+    }
+}
+
